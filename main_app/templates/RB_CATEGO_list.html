@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h4>Lista</h4>
+
+{% for ob in object_list %}
+
+	<p>{{ob}}</p>
+
+{% endfor %}
+
+{% endblock %}

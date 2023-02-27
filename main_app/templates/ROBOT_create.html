@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h4>Crear</h4>
+
+<form action='' method='post' enctype='multipart/form-data'>
+
+	{% csrf_token %}
+
+	{{form.as_p}}
+	<button type="submit" >Submit</button>
+
+</form>
+
+{% endblock %}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARCH_ROBOTIC_LAB</title>
+</head>
+<body>
+{% block content %}
+
+<h4>Index</h4>
+<h3>Options</h3>
+<h5>Creates</h5>
+<ul>
+    <li><a href="{% url 'ROBOT_CREATEVIEW' %}">Create Robot</a></li>
+    <li><a href="{% url 'COMPONENT_CREATEVIEW' %}">Create Component</a></li>
+    <li><a href="{% url 'BASIC_LIBRARY_CREATEVIEW' %}">Create Basic Library</a></li>
+    <li><a href="{% url 'BASIC_COMP_CREATEVIEW' %}">Create Basic Component</a></li>
+    <li><a href="{% url 'BASIC_STRUCTURE_CREATEVIEW' %}">Create Basic Structure</a></li>
+</ul>
+<br><hr><br>
+<h5>List</h5>
+<ul>
+    <li><a href="{% url 'ROBOT_LISTVIEW' %}">List Robot</a></li>
+    <li><a href="{% url 'COMPONENT_LISTVIEW' %}">List Component</a></li>
+    <li><a href="{% url 'BASIC_LIBRARY_LISTVIEW' %}">List Basic Library</a></li>
+    <li><a href="{% url 'BASIC_COMP_LISTVIEW' %}">List Basic Component</a></li>
+    <li><a href="{% url 'BASIC_STRUCTURE_LISTVIEW' %}">List Basic Structure</a></li>
+</ul>
+{% endblock %}
+
+
+</body>
+</html>
+
